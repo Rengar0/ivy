@@ -1,0 +1,1498 @@
+/*-----------------------------------reset-------------------------------------*/
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#fff;
+    font-size:16px;
+    color:#666666;
+    font-family: "微软雅黑";
+}
+/* ::selection{
+	background-color: #4ec8fe;
+	color: #ffffff;
+}
+::-webkit-selection{
+	background-color: #4ec8fe;
+	color: #ffffff;
+} */
+
+p,h1,h2,h3,h4,h5,input,ul,li,dl,dt,dd,img,pre{
+    padding:0;
+    margin:0;
+    outline:0;
+    border:0;
+}
+
+i,em,cite{
+	font-style:normal;
+}
+
+li{
+    list-style:none;
+}
+a{
+	color: black;
+}
+a,a:hover,a:active,a:visited,a:link{
+	text-decoration:none;
+}
+img{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+.clearfloat{
+    clear:both;
+    overflow:hidden;
+}
+.clearfloatx{
+	clear:both;
+}
+.w1440{
+    width:1440px;
+    margin:0 auto;
+	position: relative;
+}
+.w1250{
+	width: 1250px;
+	margin: 0 auto;
+	position: relative;
+}
+.transition5{
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.transition3{
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*文字渐变的类*/
+.textlinear{
+	background: -webkit-linear-gradient(#33cccc,#00ccff,#3366cc);
+	background: -moz-linear-gradient(#33cccc,#00ccff,#3366cc);
+	background: -ms-linear-gradient(#33cccc,#00ccff,#3366cc);
+	background: -o-linear-gradient(#33cccc,#00ccff,#3366cc);
+	background: linear-gradient(#33cccc,#00ccff,#3366cc);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+/*背景渐变的类*/
+.bglinear{
+	background: -webkit-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -moz-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -ms-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -o-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: linear-gradient(to right,#0e97fd,#4ec8fe);
+	box-shadow: 0 0 15px 0 rgba(68,192,254,.7);
+}
+.bglinear a{
+	color: white !important;
+}
+.newsShare{
+	background: -webkit-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -moz-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -ms-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: -o-linear-gradient(to right,#0e97fd,#4ec8fe);
+	background: linear-gradient(to right,#0e97fd,#4ec8fe);
+	box-shadow: 0 0 15px 0 rgba(68,192,254,.7);
+}
+.newsShare a{
+	color: white !important;
+}
+.p_bglinear{
+	background: -webkit-linear-gradient(#a483ec,#3537d4);
+	background: -moz-linear-gradient(#a483ec,#3537d4);
+	background: -ms-linear-gradient(#a483ec,#3537d4);
+	background: -o-linear-gradient(#a483ec,#3537d4);
+	background: linear-gradient(#a483ec,#3537d4);
+}
+/*-----------------------------------首页html开始-------------------------------------*/
+/*-----------------------------------头部-------------------------------------*/
+.daohang{
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 5px 0px;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+.headerL{
+	display: flex;
+	align-items: center;
+}
+.headerL a{
+	display: block;
+}
+.headerL img{
+	display: block;
+}
+.headerR ul{
+	display: flex;
+	justify-content: center;
+	padding: 25px 0;
+	padding-top: 15px;
+}
+.headerR ul li{
+	height: 52px;
+	line-height: 52px;
+	/* border-bottom: 3px solid #ff6600; */
+	margin-right: 40px;
+}
+.headerR ul li:last-of-type{
+	margin-right: 0;
+}
+.headerR ul li a{
+	color: #444444;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 8px;
+	box-sizing: border-box;
+	font-size: 18px;
+}
+.headerR ul li a:hover{
+	color: #ff6600;
+	/* border-bottom: 3px solid #ff6600; */
+}
+.headerR .headerActive a{
+	color: #ff6600;
+	border-bottom: 3px solid #ff6600;
+}
+/*-----------------------------------banner-------------------------------------*/
+.swiper-pagination-bullet{
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	transition: width 1s;
+}
+.swiper-pagination-bullet-active{
+	width: 40px;
+	background: white;
+}
+.banner{
+	min-width: 1250px;
+	height: 627px;
+}
+/*-----------------------------------药品分类-------------------------------------*/
+.ypfl{
+	background: #F8F8F8;
+	padding: 83px 0 104px 0;
+}
+.drug_classify{
+	display: flex;
+	justify-content: space-between;
+}
+.drug_classify div{
+	/* width: 445px; */
+	width: 31%;
+	height: 274px;
+	color: black;
+	/* background: #faeaff; */
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 34px 50px;
+	box-sizing: border-box;
+}
+.drug_classify div h4{
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.drug_classify div p{
+	font-size: 12px;
+}
+.drug_classify div h4,.drug_classify div p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.drug_01{
+	background: url(../images/feilei01.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+.drug_02{
+	background: url(../images/feilei02.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+.drug_03{
+	background: url(../images/feilei03.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+/*-----------------------------------公司概况-------------------------------------*/
+.HCS{
+	padding: 100px 0;
+}
+.company{
+	padding: 150px 0 128px 0;
+}
+.company_head{
+	display: flex;
+	justify-content: center;
+}
+.company_head_con{
+	display: flex;
+}
+.company_head_con span{
+	font-size: 61px;
+	line-height: 61px;
+	color: #ff6600;
+	padding-right: 8px;
+}
+.company_head_con div{
+	color: #000000;
+}
+.company_head_con div p{
+	font-size: 30px;
+}
+.company_desc p{
+	line-height: 40px;
+	padding: 66px 24px 50px 24px;
+	text-align: center;
+	color: #333333;
+	font-size: 14px;
+}
+.company_more{
+	text-align: center;
+	padding-bottom: 96px;
+}
+.company_more a{
+	display: inline-block;
+	padding: 7px 26px;
+	border: 1px solid #999999;
+	border-radius: 118px;
+	box-sizing: border-box;
+	color: #999999;
+}
+.company_more a:hover{
+	border: 1px solid #ff6600;
+	color: #ffffff;
+	background: #ff6600;
+}
+.company_item{
+	display: flex;
+	justify-content: space-around;
+}
+.company_item div{
+	text-align: center;
+	width: 25%;
+	overflow: hidden;
+}
+.company_item div i{
+	font-size: 70px;
+	color: #ff6600;
+	font-weight: 400;
+}
+.company_item div h1 img{
+	width: 80px;
+	display: block;
+	margin: 0 auto;
+}
+.company_item div h4{
+	padding: 30px 0 16px 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+/*-----------------------------------大药房-------------------------------------*/
+.dtf{
+	background: #F8F8F8;
+}
+.pharmacy{
+	padding: 80px 0;
+}
+.pharmacy_title{
+	display: flex;
+	justify-content: center;
+	padding: 58px 0 58px 0;
+}
+.pharmacy_title li{
+	width: 96px;
+	padding: 7px;
+	box-sizing: border-box;
+	border: 1px solid #d2d2d2;
+	border-radius: 95px;
+	text-align: center;
+	margin-right: 32px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.pharmacy_title li:last-of-type{
+	margin-right: 0;
+}
+.pharmacy_title li:hover{
+	cursor: pointer;
+}
+.pharmacy_title .phar_t_active,.HCS_title .phar_t_active{
+	background: #ff6600;
+	color: #ffffff;
+	border: 1px solid #ff6600;
+}
+.pharmacy_item01{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+.pharmacy_item01 li{
+	/* width: 326px; */
+	width: 22.5%;
+	height: 350px;
+	text-align: center;
+	background: #ffffff;
+	overflow: hidden;
+	border-radius: 8px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.pharmacy_item01 li:hover{
+	-webkit-transform: translate3d(0px,-15px,0);
+	-moz-transform: translate3d(0px,-15px,0);
+	-ms-transform: translate3d(0px,-15px,0);
+	-o-transform: translate3d(0px,-15px,0);
+	transform: translate3d(0px,-15px,0);
+	-webkit-box-shadow: 0 3px 15px 0 rgba(255, 102, 0, 0.5);
+	-moz-box-shadow: 0 3px 15px 0 rgba(255, 102, 0, 0.5);
+	box-shadow: 0 3px 15px 0 rgba(255, 102, 0, 0.5);
+}
+.pharmacy_item01 li a{
+	height: 100%;
+	display: block;
+	/* padding: 50px 50px 44px 50px; */
+	padding: 0 43px;
+	box-sizing: border-box;
+}
+.phar_item_img{
+	width: 100%;
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.phar_item_img img{
+	display: block;
+	width: 100%;
+}
+.pharmacy_item01 li h4{
+	font-size: 18px;
+	font-weight: 400;
+	padding: 18px 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.pharmacy_item01 li p{
+	color: #999999;
+	font-size: 13px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.phar_more{
+	padding-bottom: 0;
+	padding-top: 50px;
+}
+/*-----------------------------------健康小常识-------------------------------------*/
+.HCS_title{
+	display: flex;
+	justify-content: center;
+	padding: 46px 0 100px 0;
+}
+.HCS_title li{
+	width: 96px;
+	padding: 7px;
+	box-sizing: border-box;
+	border: 1px solid #d2d2d2;
+	border-radius: 95px;
+	text-align: center;
+	margin-right: 32px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.HCS_title li:hover{
+	cursor: pointer;
+}
+.HCS_items01{
+	display: flex;
+	justify-content: space-between;
+}
+.HCS_itemsL{
+	position: relative;
+	width: 43.3%;
+	height: 420px;
+	overflow: hidden;
+	border-radius: 6px;
+}
+.HCS_itemsL a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.HCS_itemsL:hover img{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.HCS_itemsL img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.HCS_itemsL p{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+	color: #ffffff;
+	background: -webkit-linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	background: -moz-linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	background: -ms-linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	background: -o-linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0));
+}
+
+.HCS_itemsR{
+	width: 50%;
+	max-height: 420px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.HCS_itemsR ul{
+	width: 100%;
+}
+.HCS_itemsR ul li{
+	display: flex;
+	justify-content: space-between;
+}
+.time{
+	width: 116px;
+	height: 146px;
+	line-height: 104px;
+	text-align: center;
+	color: #999999;
+	border-right: 1px solid #E0E0E0;
+    box-sizing: border-box;
+	position: relative;
+}
+.time::after{
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999999;
+	position: absolute;
+	top: 50%;
+	right: -6px;
+	    margin-top: -20px;
+}
+.HCS_itemsR ul li:last-of-type .time{
+	height: 114px;
+}
+.HCS_itemsR ul li:last-of-type .time::after{
+	margin-top: -8px;
+}
+.time span{
+	font-size: 40px;
+}
+.HCS_itemsR_news{
+	width: 81%;
+	/* padding-left: 40px;
+	box-sizing: border-box; */
+}
+.HCS_itemsR_news:hover h4{
+	color: #ff6600;
+}
+.HCS_itemsR_news a{
+	display: block;
+	padding-left: 40px;
+	box-sizing: border-box;
+	/* width: 84%;
+	height: 100%; */
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.HCS_itemsR_news h4{
+	font-size: 18px;
+	font-weight: 400;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 18px 0;
+	padding-top: 0;
+}
+.HCS_itemsR_news p{
+	font-size: 14px;
+	line-height: 30px;
+	/* padding: 24px 0; */
+	padding-bottom: 12px;
+	box-sizing: border-box;
+	color: #999999;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*-----------------------------------底部-------------------------------------*/
+.dibu{
+	background: #f8f8f8;
+}
+.footer{
+	display: flex;
+	/* justify-content: flex-start; */
+	padding: 60px 0 50px 0;
+}
+.hotline{
+	padding: 18px 100px 22px 80px;
+	box-sizing: border-box;
+	border-right: 1px solid #E9E9E9;
+	background: url(../images/hotline.png) center left no-repeat;
+}
+.hotline p{
+	padding-bottom: 10px;
+}
+.hotline h4{
+	font-size: 30px;
+	font-weight: 400;
+}
+.copyRight{
+	width: 48%;
+	padding-left: 100px;
+}
+.copyRight ul li{
+	display: inline-block;
+	margin-right: 50px;
+}
+.copyRight ul li a{
+	display: inline-block;
+}
+.copyRight ul li a:hover{
+	color: #ff6600;
+}
+.copyRight p{
+	font-size: 13px;
+	line-height: 22px;
+	padding-top: 28px;
+}
+.contact{
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -20px;
+}
+.contact a{
+	display: block;
+	margin-right: 52px;
+	position: relative;
+}
+.contact a:hover div{
+	display: block;
+}
+.contact a:last-of-type{
+	margin-right: 0;
+}	
+.contact>a>img{
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+.contacta>a:last-of-type{
+	margin-right: 0;
+}
+.QRCode{
+	display: none;
+	background: #ffffff;
+	position: absolute;
+	bottom: 35px;
+	left: -60px;
+	max-width: 150px;
+	height: 166px;
+}
+.QRCode::after{
+	content: '';
+	width: 13px;
+	height: 13px;
+	display: block;
+	position: absolute;
+	bottom: 9px;
+    left: 70px;
+	border-right: 1px solid #ff6600;
+	border-bottom: 1px solid #ff6600;
+	box-sizing: border-box;
+	background: white;
+	transform: rotateZ(45deg);
+}
+.QRCode img{
+	border: 1px solid #ff6600;
+}
+.contact i{
+	font-size: 36px;
+	margin-right: 52px;
+	color: #000000;
+}
+.contact i:last-of-type{
+	margin-right: 0;
+}
+/*-----------------------------------首页html结束-------------------------------------*/
+
+
+
+/*-----------------------------------关于我们html开始-------------------------------------*/
+/*-----------------------------------banner-------------------------------------*/
+.about_banner{
+	height: 580px;
+	background: url(../images/about_banner.jpg) center center no-repeat;
+	background-size: 1920px auto;
+}
+.about_ms{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.about_desc{
+	position: absolute;
+	max-width: 580px;
+	color: #ffffff;
+	margin-top: -30px;
+}
+.about_desc h2{
+	font-size: 40px;
+}
+.about_desc p{
+	line-height: 30px;
+	padding: 60px 0;
+}
+.about_desc div{
+	width: 166px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	overflow: hidden;
+	border: 1px solid #ffffff;
+	border-radius: 44px;
+	position: relative;
+}
+.about_desc span{
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+	animation: flash 1.5s infinite;
+}
+.about_desc div a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+}
+/*-----------------------------------放心药店，正品保障-------------------------------------*/
+.quality_goods{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 120px 0;
+}
+.QG_desc{
+	max-width: 604px;
+	color: #333333;
+}
+.QG_desc h4{
+	font-size: 30px;
+	font-weight: 400;
+}
+.QG_desc h1{
+	font-size: 48px;
+	padding: 34px 0 72px 0;
+}
+.QG_desc p{
+	line-height: 30px;
+	font-size: 14px;
+}
+.QG_img img{
+	display: block;
+	width: 100%;
+}
+/*-----------------------------------药真价实，天天低价-------------------------------------*/
+.yzjs{
+	background: #f5f5f5;
+}
+.cheap_desc{
+	text-align: right;
+}
+/*-----------------------------------关于我们html结束-------------------------------------*/
+
+
+
+/*-----------------------------------联系我们html开始-------------------------------------*/
+/*-----------------------------------banner-------------------------------------*/
+.link_banner{
+	height: 480px;
+	background: url(../images/contact_banner.jpg) center center no-repeat;
+	background-size: 1920px auto;
+}
+/*-----------------------------------服务热线-------------------------------------*/
+.link_service{
+	position: relative;
+	font-size: 30px;
+	color: #000000;
+	padding: 70px 0 110px 0;
+}
+.link_service span:nth-of-type(1){
+	font-size: 16px;
+	color: #999999;
+	padding-left: 28px;
+}
+.link_service span:nth-of-type(2){
+	display: inline-block;
+	width: 7px;
+	height: 10px;
+	background: #ff6600;
+	margin: 0 21px 0 18px;
+}
+.link_service p{
+	width: 82%;
+	height: 10px;
+	background: #ededed;
+	float: right;
+	margin-top: 22px;
+}
+.link_detail{
+	overflow: hidden;
+}
+.link_detail_tro p:nth-of-type(1){
+	font-size: 36px;
+	color: #333333;
+}
+.link_detail_tro p:nth-of-type(2){
+	line-height: 44px;
+	padding: 60px 0;
+	font-size: 18px;
+}
+.link_detail_tro p:nth-of-type(2) span{
+	padding-left: 54px;
+}
+.link_detail_tro div img{
+	margin-right: 48px;
+}
+.link_form div{
+	position: relative;
+	padding-bottom: 30px;
+}
+.link_form div p{
+	padding: 10px 0 0 42px;
+	color: red;
+	font: 14px/16px '微软雅黑';
+	display: none;
+}
+.link_form input{
+	width: 528px;
+	border: 1px solid #E5E5E5;
+	padding: 10px;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.link_form span{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    margin-top: 11px;
+}
+.link_form textarea{
+	width: 528px;
+	margin-left: 42px;
+	padding: 10px;
+	outline: none;
+	vertical-align: bottom;
+	border-color: #E5E5E5;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #666666;
+	resize: none;
+}
+.link_form textarea::-webkit-scrollbar{
+	display: none;
+}
+.link_form div:last-of-type input{
+	margin-left: 42px;
+	border: none;
+	width: 168px;
+	color: white;
+	background: #ff6600;
+}
+.link_form div:last-of-type input:hover{
+	cursor: pointer;
+}
+/*-----------------------------------百度地图API-------------------------------------*/
+.map {
+    padding: 70px 0;
+}
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+/*-----------------------------------联系我们html结束-------------------------------------*/
+
+
+
+/*-----------------------------------产品列表html开始-------------------------------------*/
+/*-----------------------------------banner-------------------------------------*/
+.product_banner{
+	height: 580px;
+	background: url(../images/product_banner.jpg) center center no-repeat;
+	background-size: 1920px auto;
+}
+.product_desc{
+	max-width: 630px;
+}
+.product_desc h2 {
+	font-size: 60px;
+}
+.product_desc p {
+	line-height: 30px;
+	padding: 50px 0 40px 0;
+}
+/*-----------------------------------产品分类-------------------------------------*/
+.prd_kind{
+	padding: 60px 0 46px 0;
+}
+.kind{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-bottom: 16px;
+}
+.kind span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	min-width: 54px;
+	line-height: 31px;
+}
+.kind ul{
+	width: 96%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.kind ul li{
+	margin-right: 14px;
+	margin-bottom: 14px;
+	border-radius: 32px;
+	overflow: hidden;
+}
+.kind ul li:last-of-type{
+	margin-right: 0;
+}
+.kind ul li:hover a{
+	background: #ff6c00;
+	color: #ffffff;
+}
+.kind ul li a{
+	display: block;
+	padding: 5px 18px;
+}
+.kindActive,.classifyActive{
+	padding: 5px 18px;
+	background: #ff6c00;
+	color: #ffffff;
+}
+.classify{
+	padding-bottom: 0;
+}
+/*-----------------------------------产品列表-------------------------------------*/
+.cplb{
+	background: #f5f5f5;
+}
+.prd_list{
+	padding: 75px 0;
+	padding-bottom: 31px;
+}
+.prd_item01{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.prd_item01 li{
+	width: 22.7%;
+	margin-right: 44px;
+	margin-bottom: 44px;
+}
+.prd_item01 li:nth-of-type(4n){
+	margin-right: 0;
+}
+/*-----------------------------------分页-------------------------------------*/
+.paging{
+	padding: 46px 0;
+}
+.paging ul{
+	display: flex;
+	justify-content: center;
+}
+.paging ul li{
+	border-radius: 32px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.paging ul li:last-of-type{
+	margin-right: 0;
+}
+.paging ul li a{
+	display: block;
+	padding: 5px 11px;
+}
+.paging ul li a:hover{
+	background: #ff6c00;
+	color: #ffffff;
+}
+.pageActive{
+	padding: 5px 11px;
+	background: #ff6c00;
+	color: #ffffff;
+}
+/*-----------------------------------产品列表html结束-------------------------------------*/
+
+
+
+/*-----------------------------------文章详情html开始-------------------------------------*/
+/*-----------------------------------文章内容-------------------------------------*/
+.wznr{
+	background: #f5f5f5;
+}
+.article{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 60px 0;
+}
+.article_list{
+	width: 67%;
+	padding: 0 32px;
+	padding-bottom: 54px;
+	box-sizing: border-box;
+	background: #ffffff;
+}
+.article_list h1{
+	padding-top: 40px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.article_info{
+	padding: 22px 0 40px 0;
+}
+.article_info span{
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 62px;
+	color: #999999;
+}
+.art-title-black{
+	background: url(../images/list-black.png) center left no-repeat;
+	background-size: auto 78%;
+	text-indent: 24px;
+}
+.art-time-black{
+	background: url(../images/time-black.png) center left no-repeat;
+	background-size: auto 78%;
+	text-indent: 24px;
+}
+.art-title{
+	background: url(../images/list.png) center left no-repeat;
+	background-size: auto 74%;
+	text-indent: 20px;
+}
+.art-time{
+	background: url(../images/time.png) center left no-repeat;
+	background-size: auto 74%;
+	text-indent: 20px;
+}
+.browse{
+	background: url(../images/browse.png) center left no-repeat;
+	background-size: auto 74%;
+	text-indent: 20px;
+}
+.article_text{
+	padding-bottom: 36px;
+}
+.article_text p{
+	font-size: 14px;
+	color: #999999;
+	line-height: 38px;
+}
+.article_con{
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
+.article_title{
+	padding: 42px 0;
+}
+.article_title img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+.article_body p{
+	text-indent: 28px;
+	font-size: 14px;
+	line-height: 38px;
+	color: #555555;
+}
+.article_body .indent0{
+	text-indent: 0;
+}
+.article_nav{
+	width: 30.6%;
+}
+.recommend{
+	width: 100%;
+}
+#share-1{
+	text-align: center;
+	padding: 46px;
+}
+.article_pages ul{
+	display: flex;
+	align-content: space-between;
+}
+.article_pages ul li{
+	width: 50%;
+	font-size: 14px;
+	line-height: 56px;
+	color: #999999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.article_pages ul li a{
+	display: inline-block;
+	color: #999999;
+	width: 100%;
+}
+.article_pages ul li a:hover{
+	color: #ff6600;
+}
+.art_nav_items{
+	padding: 10px 23px;
+	background: #ffffff;
+	margin-bottom: 30px;
+}
+.art_nav_items div{
+	border-bottom: 1px solid #eaeaea;
+	margin-bottom: 14px;
+}
+.art_nav_items div span{
+	display: inline-block;
+	font-size: 18px;
+	color: #333333;
+	line-height: 50px;
+}
+.art_nav_items ul li{
+	line-height: 50px;
+}
+.art_nav_items ul li a{
+	display: block;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #555555;
+}
+.art_nav_items ul li a:hover{
+	color: #ff6600;
+}
+.art_nav_items ul li:nth-of-type(1) a span,.art_nav_items ul li:nth-of-type(2) a span,.art_nav_items ul li:nth-of-type(3) a span{
+	border: 1px solid #ff6600;
+	color: #ff6600;
+}
+.art_nav_items ul li a span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #999999;
+	border-radius: 30px;
+	color: #999999;
+	margin-right: 12px;
+}
+.art_nav_ad a{
+	display: block;
+}
+.art_nav_ad img{
+	display: block;
+	width: 100%;
+}
+/*-----------------------------------文章详情html结束-------------------------------------*/
+
+
+
+/*-----------------------------------健康资讯html开始-------------------------------------*/
+/*-----------------------------------banner-------------------------------------*/
+.news_banner{
+	border-radius: 20px;
+	padding-top: 45px;
+}
+.news_banner .swiper-pagination-bullet{
+	background: #ffffff;
+	opacity: 0.5;
+}
+.news_banner .swiper-pagination-bullet-active{
+	background: #ff6600;
+	opacity: 1;
+}
+.NB_items>img{
+	display: block;
+	border-radius: 20px;
+}
+.NB_desc{
+	position: absolute;
+	top: 54px;
+	left: 62px;
+}
+.NB_desc h2{
+	font-size: 28px;
+	font-weight: 400;
+	color: #000000;
+	margin-bottom: 24px;
+}
+.NB_desc p img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin-right: 6px;
+	margin-top: -4px;
+}
+.NB_desc p span{
+	display: inline-block;
+	color: #000000;
+	margin-right: 40px;
+}
+.news_nav ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 42px 0 26px 0;
+}
+.news_nav ul li{
+	line-height: 30px;
+	border-radius: 30px;
+	overflow: hidden;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+.news_nav ul li:last-of-type{
+	margin-right: 0;
+}
+.news_nav ul li:hover{
+	background: #FF6600;
+}
+.news_nav ul li:hover a{
+	color: #ffffff;
+}
+.news_nav ul li a{
+	display: block;
+	padding: 0 14px;
+}
+.news_nav_active{
+	color: #ffffff;
+	padding: 0 14px;
+	background: #FF6600;
+}
+/*-----------------------------------健康资讯-------------------------------------*/
+.jkzx{
+	background: #f5f5f5;
+}
+.news{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.news_con{
+	width: 67%;
+	padding: 0 32px;
+	box-sizing: border-box;
+	background: #ffffff;
+}
+.news_item01{
+	border-bottom: 1px solid #f1f1f1;
+	padding: 40px 0 36px 0;
+}
+.news_item01 a{
+	display: block;
+}
+.news_item01 h2{
+	font-size: 20px;
+	font-weight: 400;
+	color: #000000;
+}
+.news_item01 .article_info{
+	padding: 24px 0;
+}
+.news_item01 .article_title{
+	padding: 0;
+}
+.news_item01 .article_text{
+	padding-bottom: 0;
+}
+.news_pages ul{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 64px;
+}
+.news_pages ul li{
+	width: 50%;
+	text-align: center;
+	font-size: 18px;
+}
+.news_pages ul li a{
+	display: block;
+	padding: 15px 0;
+	color: #999999;
+	line-height: 40px;
+}
+.news_pages ul li a:hover{
+	background: #f5f5f5;
+}
+/*-----------------------------------健康资讯html结束-------------------------------------*/
+
+
+
+/*-----------------------------------商品详情html开始-------------------------------------*/
+/*-----------------------------------商品展示-------------------------------------*/
+.prd_detail{
+	display: flex;
+	justify-content: space-between;
+	padding: 90px 0;
+}
+.prd_show{
+	width: 50%;
+	max-width: 552px;
+	/* margin: 0 auto; */
+	position: relative;
+	box-sizing: border-box;
+}
+.prd_show .swiper-container {
+	width: 100%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.swiper-slide {
+	background-size: cover;
+	background-position: center;
+}
+.prd_show .gallery-top {
+	height: 320px;
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+}
+.swiper_shadow{
+	position: absolute;
+	height: 100%;
+	width: 33%;
+	top: 0;
+	z-index: 9;
+	display: flex;
+}
+.prd_show .gallery-thumbs {
+	height: 90px;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+	height: 100%;
+	/* opacity: 0.4; */
+}
+.gallery-thumbs .swiper-slide:hover{
+	cursor: pointer;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+	opacity: 1;
+	border: 1px solid #FFAA00;
+	box-sizing: border-box;
+	border-radius: 2px;
+	margin-top: -1px;
+}
+.swiper-button-black{
+	width: 37px;
+	height: 37px;
+	border-radius: 37px;
+	opacity: 0.3;
+	/* background-color: rgba(0,0,0,.3);
+	background-size: 7px 13px; */
+}
+.top-prev{
+	top: 40%;
+	left: 0;
+}
+.top-next{
+	top: 40%;
+	right: 0;
+}
+.prd_desc{
+	width: 50%;
+}
+.prd_desc h2{
+	font-size: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+.use_for{
+	font-size: 14px;
+	color: #999999;
+	line-height: 24px;
+	padding: 20px 0 30px 0;
+}
+.specifications p{
+	font-size: 14px;
+	color: #333333;
+	line-height: 38px;
+}
+.prd_price{
+	font-size: 14px;
+	padding: 30px 0 60px 0;
+}
+.prd_price span{
+	color: #ff6600;
+}
+.prd_price em{
+	font-size: 30px;
+}
+.consult{
+	width: 286px;
+	height: 58px;
+	line-height: 58px;
+	border: 1px solid #ff6600;
+	text-align: center;
+	color: #ff6600;
+	font-size: 18px;
+}
+.consult a{
+	display: block;
+	color: #ff6600;
+}
+.consult a:hover{
+	background: #ff6600;
+	color: #ffffff;
+}
+/*-----------------------------------药品介绍-------------------------------------*/
+.ypjs{
+	background: #f5f5f5;
+	padding: 44px 0 64px 0;
+}
+.prd_introduce{
+	padding: 50px 44px 80px 44px;
+	box-sizing: border-box;
+	background: #ffffff;
+}
+.prd_introduce p{
+	font-size: 14px;
+	line-height: 36px;
+}
+.prd_introduce p b{
+	color: #333333;
+}
+.jiesh{
+	padding: 60px 0;
+}
+/*-----------------------------------商品详情html结束-------------------------------------*/
+@media only screen and (max-width: 1920px) {
+	.w1440{
+		width: 1440px;
+	}
+}
+@media only screen and (max-width: 1440px) {
+	.w1440{
+		width: 1250px;
+	}
+	.link_service p{
+		width: 79%;
+	}
+	.kind ul{
+		width: 95%;
+	}
+	.prd_item01 li{
+		width: 22.3%;
+	}
+}
+@media only screen and (max-width: 1250px) {
+	/* .w1440{
+		width: 1250px;
+	} */
+	.ypfl,.dtf,.dibu{
+		width: 1250px;
+	}
+	.wznr{
+		width: 1250px;
+	}
+	.about_banner,.yzjs{
+		width: 1250px;
+	}
+	.product_banner,.cplb{
+		width: 1250px;
+	}
+	.ypjs{
+		width: 1250px;
+	}
+}
+@-webkit-keyframes flash{
+	from{box-shadow: 0 0 0 0px rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 130px rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-moz-keyframes flash{
+	from{box-shadow: 0 0 0 0px rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 130px rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-ms-keyframes flash{
+	from{box-shadow: 0 0 0 0px rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 130px rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@-o-keyframes flash{
+	from{box-shadow: 0 0 0 0px rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 130px rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
+@keyframes flash{
+	from{box-shadow: 0 0 0 0px rgba(255,255,255,.7);background: rgba(255,255,255,.7);}
+	to{box-shadow: 0 0 0 130px rgba(255,255,255,0);background: rgba(255,255,255,0);}
+}
